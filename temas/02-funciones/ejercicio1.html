@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link type="image/png" sizes="120x120" rel="icon" href="/img/js.png">
+</head>
+<body>
+    <main>
+        <h1 class="main-title">Ejercicio 1</h1>
+        <a class="main-back" href="/temas/02-funciones/home.html">&#x21a9;</a>
+    </main>
+    <script>
+        // Función para sumar dos números
+        function sumar(a, b) {
+            return a + b;
+        }
+
+        // Función para restar dos números
+        function restar(a, b) {
+            return a - b;
+        }
+
+        // Función para multiplicar dos números
+        function multiplicar(a, b) {
+            return a * b;
+        }
+
+        // Función para dividir dos números
+        function dividir(a, b) {
+            if (b !== 0) {
+                return a / b;
+            } else {
+                return "Error: No se puede dividir por cero.";
+            }
+        }
+
+        // Solicitar al usuario la operación deseada
+        let operacion = prompt("Seleccione una operación: suma, resta, multiplicación o división").toLowerCase();
+
+        // Solicitar al usuario los números
+        let numero1 = parseFloat(prompt("Ingrese el primer número:"));
+        let numero2 = parseFloat(prompt("Ingrese el segundo número:"));
+
+        let resultado;
+
+        // Realizar la operación correspondiente
+        if (operacion === "suma") {
+            resultado = sumar(numero1, numero2);
+        } else if (operacion === "resta") {
+            resultado = restar(numero1, numero2);
+        } else if (operacion === "multiplicación") {
+            resultado = multiplicar(numero1, numero2);
+        } else if (operacion === "división") {
+            resultado = dividir(numero1, numero2);
+        } else {
+            resultado = "Operación no válida.";
+        }
+
+        // Mostrar el resultado
+        console.log("Resultado:", resultado);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de multiplicar</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link type="image/png" sizes="120x120" rel="icon" href="/img/js.png">
+</head>
+<body>
+    <main>
+        <h1 class="main-title">Ejercicio 4</h1>
+        <a class="main-back" href="/temas/02-funciones/home.html">&#x21a9;</a>
+    </main>
+    <script>
+        let numero = parseInt(prompt("Ingrese un número para mostrar su tabla de multiplicar:"));
+        if(!isNaN(numero)){
+            for (let i = 1; i <= 10; i++) {
+                alert(numero + " x " + i + " = " + (numero * i));
+            }
+        }else{
+            alert('El dato ingresado no es un número...')
+        }
+    </script>
+</body>
+</html>

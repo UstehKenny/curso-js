@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Aleatorio</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link type="image/png" sizes="120x120" rel="icon" href="/img/js.png">
+</head>
+<body>
+    <main>
+        <h1 class="main-title">Ejercicio 3</h1>
+        <a class="main-back" href="/temas/02-funciones/home.html">&#x21a9;</a>
+    </main>
+    <script>
+        const numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+
+        if (numeroAleatorio % 2 === 0) {
+            alert(numeroAleatorio + " es un número aleatorio par.");
+        } else {
+            alert(numeroAleatorio + " es un número aleatorio impar.");
+        }
+
+    </script>
+</body>
+</html>

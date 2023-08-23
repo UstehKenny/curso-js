@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Min</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link type="image/png" sizes="120x120" rel="icon" href="/img/js.png">
+</head>
+<body>
+    <main>
+        <h1 class="main-title">Ejercicio 6</h1>
+        <a class="main-back" href="/temas/02-funciones/home.html">&#x21a9;</a>
+    </main>
+    <script>
+        let numeros = [15, 7, 23, 10, 5, 45, 3, 8];
+
+        let numeroMasGrande = numeros[0];
+        let numeroMasPequeno = numeros[0];
+
+        for (let i = 1; i < numeros.length; i++) {
+            if (numeros[i] > numeroMasGrande) {
+                numeroMasGrande = numeros[i];
+            }
+            
+            if (numeros[i] < numeroMasPequeno) {
+                numeroMasPequeno = numeros[i];
+            }
+        }
+
+        alert("El número más grande es: " + numeroMasGrande);
+        alert("El número más pequeño es: " + numeroMasPequeno);
+
+
+    </script>
+</body>
+</html>

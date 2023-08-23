@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link type="image/png" sizes="120x120" rel="icon" href="/img/js.png">
+</head>
+<body>
+    <main>
+        <h1 class="main-title">Ejercicio 2</h1>
+        <a class="main-back" href="/temas/01-sintaxis/home.html">&#x21a9;</a>
+    </main>
+    <script>
+        const usuarioCorrecto = "kennyzzz";
+        const contraseñaCorrecta = "12345";
+
+        try {
+            let usuarioIngresado = prompt("Ingrese su nombre de usuario:");
+            if (!usuarioIngresado) {
+                throw new Error("No se proporcionó un nombre de usuario.");
+            }
+
+            let contraseñaIngresada = prompt("Ingrese su contraseña:");
+            if (!contraseñaIngresada) {
+                throw new Error("No se proporcionó una contraseña.");
+            }
+
+            if (usuarioIngresado === usuarioCorrecto && contraseñaIngresada === contraseñaCorrecta) {
+                alert("Inicio de sesión exitoso. ¡Bienvenido!");
+            } else {
+                throw new Error("Nombre de usuario o contraseña incorrectos.");
+            }
+        } catch (error) {
+            alert("Ocurrió un error durante el inicio de sesión: " + error.message);
+        }
+
+    
+    </script>
+</body>
+</html>

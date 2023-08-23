@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🪨,📄,✂️</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link type="image/png" sizes="120x120" rel="icon" href="/img/js.png">
+</head>
+<body>
+    <main>
+        <h1 class="main-title">Ejercicio 1</h1>
+        <a class="main-back" href="/temas/01-sintaxis/home.html">&#x21a9;</a>
+    </main>
+    <script>
+        let jugador = 0;
+        let pc = 0;
+        let triunfos = 0;
+        let perdidas = 0;
+
+        while (triunfos < 3 && perdidas < 3) {
+            pc = Math.floor(Math.random() * 3) + 1;
+            jugador = parseInt(prompt("Elige:\n 1 - Piedra \n 2 - Papel \n 3 - Tijera"));
+            
+            let resultadoJugador = "";
+            if (jugador === 1) {
+                resultadoJugador = "Piedra";
+            } else if (jugador === 2) {
+                resultadoJugador = "Papel";
+            } else if (jugador === 3) {
+                resultadoJugador = "Tijera";
+            } else {
+                resultadoJugador = "Mal elegido";
+            }
+            
+            alert("PC elige " + resultadoJugador);
+
+            let resultadoPC = "";
+            if (pc === 1) {
+                resultadoPC = "Piedra";
+            } else if (pc === 2) {
+                resultadoPC = "Papel";
+            } else if (pc === 3) {
+                resultadoPC = "Tijera";
+            }
+            
+            alert("Tú eliges " + resultadoPC);
+
+            // COMBATE
+            if (pc === jugador) {
+                alert("EMPATE");
+            } else if ((jugador === 1 && pc === 3) || (jugador === 2 && pc === 1) || (jugador === 3 && pc === 2)) {
+                alert("GANASTE");
+                triunfos = triunfos + 1;
+            } else {
+                alert("PERDISTE");
+                perdidas = perdidas + 1;    
+            }
+        }
+
+        alert("Ganaste: " + triunfos + " veces. \nPerdiste: " + perdidas + " veces.");
+
+    </script>
+</body>
+</html>
