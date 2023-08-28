@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&family=Oxanium:wght@200;300;400;500;600;700;800&family=Rock+Salt&display=swap');
 
 * {
 	padding: 0;
@@ -9,6 +10,13 @@ body{
     background-color: #F2F7FF;
     font-family: 'Oxanium', cursive;
     font-family: 'Rock Salt', cursive;
+    text-align: center;
+}
+header{
+    width: 100vw;
+    padding: 30px;
+    position: absolute;
+    top: 0;
     text-align: center;
 }
 main{
@@ -50,4 +58,190 @@ main{
 .main-back:hover{
     color: #FFCE63;
     text-shadow: 1px 1px 3px #10316B;
+}
+.color{
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    border: 4pt solid #10316B;
+    border-radius: 4pt;
+}
+.color:hover{
+    cursor: pointer;
+    border: 2pt solid #F2F7FF;
+}
+#azul{
+    background: blue;
+    color: #F2F7FF;
+}
+#rojo{
+    background: red;
+    color: #F2F7FF;
+}
+#verde{
+    background: green;
+    color: #F2F7FF;
+}
+#amarillo{
+    background: yellow;
+}
+
+.bits-card{
+    position: absolute;
+    top: 10%;
+    width: 23vw;
+    height: auto;
+    color: #F2F7FF;
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Oxanium', cursive;
+}
+.close-bits{
+    right: 0;
+    color: #F2F7FF;
+    background: #292d33;
+    width: 23vw;
+    height: 10px;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+.close{
+    cursor: pointer;
+}
+.bits-header,.buy-header{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    background: #292d33;
+    padding: 30px 10px;
+}
+.bits-info{
+    text-decoration: none;
+    color: #bf94ff;
+}
+.bits-info:hover{
+    text-decoration: underline;
+    color: #a970ff;
+}
+.bits-cheeremotes{
+    background: #3c3f43;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 30px 10px;
+    justify-content: center;
+    align-items: center;
+}
+.cheeremote{
+    width: 25%;
+    height: auto;
+}
+.bits-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+    height: 70px;
+    background: #451093;
+}
+#bits{
+    font-weight: 600;
+}
+.get-bits{
+    background: #5C2C94;
+    color: #F2F7FF;
+    padding: 8px;
+    border-radius: 0.4rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.chat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 23vw;
+    background: #292d33;
+    padding: 10px 5px;
+    height: 50px;
+    gap: 3px;
+    border-radius: 0 0 0.4rem 0.4rem;
+    position: relative;
+    bottom: 0;
+}
+.chat-identity{
+    width: 25px;
+}
+.chat-bits{
+    width: 20px;
+    cursor: pointer;
+}
+.chat-message{
+    background: #292d33;
+    width: 90%;
+    height: 100%;
+    border: 0;
+    outline:none;
+    cursor: text;
+    color: #F2F7FF;
+    padding: 0 4px;
+    border: 2pt solid #a970ff;
+    border-radius: 0.4rem;
+}
+.bits-header{
+    height: 180px;
+}
+.buy-header{
+    height: 120px;
+}
+.bits-prices{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #292d33;
+    text-align: left;
+}
+.bits-price{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.bits{
+    width: 80px;
+}
+.buy-button{
+    width: 70px;
+    background: #bf94ff;
+    color: #F2F7FF;
+    padding: 8px;
+    border-radius: 0.4rem;
+    border: 0;
+    cursor: pointer;
+}
+.buy-button:hover, .bits-confirm:hover{
+    background: #a970ff;
+}
+.bits-hidden{
+    display: none;
+}
+.bits-cost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background: #292d33;
+    padding: 30px 10px;
+}
+.bits-confirm{
+    background: #bf94ff;
+    width: 80px;
+    color: #F2F7FF;
+    padding: 10px;
+    border-radius: 0.4rem;
+    border: 0;
+    cursor: pointer;
 }
