@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitch Simulator</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link type="image/png" sizes="120x120" rel="icon" href="/img/js.png">
+    <!-- <script src="/js/03-eventos/ejercicio1.js"></script> -->
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Ejercicio 2</h1>
+    </header>
+    <main class="bits-cards">
+        <div class="bits-card">
+            <div id="buy-bits">
+                <div id="close-div-02" class="close-bits bits-hidden"><span id="close-02" class="close">&#x292B;</span></div>
+                <section class="buy-header bits-hidden">
+                    <h1>Comprar Bits</h1>
+                    <p>Los precios se muestran en MXN</p>
+                </section>
+                <section class="bits-prices bits-hidden">
+                    <div class="bits-price">
+                        <div class="bits">100 Bits</div> 
+                        <button data-cost="32.71" data-bits="100" class="buy-button">$32.71</button>
+                    </div>
+                    <div class="bits-price">
+                        <div class="bits">1000 Bits</div> 
+                        <button data-cost="163.57" data-bits="1000" class="buy-button">$163.57</button>
+                    </div>
+                    <div class="bits-price">
+                        <div class="bits">10000 Bits</div> 
+                        <button data-cost="466.16" data-bits="10000" class="buy-button">$466.16</button>
+                    </div>
+                </section>
+                <!-- <section class="bits-cost bits-hidden">
+                    <p>Cantidad: <input type="number" id="quantity" min="1" max="10"/></p>
+                    <p>Total: $<span id="total-cost">0</span> MXN</p>
+                    <p>Se añadirán <span id="total">0</span> Bits en total</p>
+                    <button class="bits-confirm">Confirmar</button>
+                </section> -->
+            </div>
+
+            <div id="close-div-01" class="close-bits bits-hidden"><span id="close-01" class="close">&#x292B;</span></div>
+            <section class="bits-header bits-hidden">
+                <h2>¡Apoya a tu streamer enviando Cheers!</h2>
+                <p>Selecciona un Cheermote para empezar tu Cheer</p>
+                <a href="https://help.twitch.tv/s/article/guide-to-cheering-with-bits?language=es_MX#:~:text=Para%20enviar%20Cheers%2C%20escribe%20o,un%20mensaje%20a%20tu%20Cheer." class="bits-info">¿Cómo envío un Cheer?</a>
+            </section>
+            <section class="bits-cheeremotes bits-hidden">
+                <img src="/img/cheer2.png" alt="" class="cheeremote">
+                <img src="/img/cheer3.png" alt="" class="cheeremote">
+                <img src="/img/cheer4.png" alt="" class="cheeremote">
+            </section>
+            <section class="bits-footer bits-hidden">
+                <div class="bits">Tienes <b><span id="bits">0</span> Bits</b></div> 
+                <button id="buy" class="get-bits">Conseguir Bits</button>
+            </section>
+            <section class="chat">
+                <img src="/img/perritu.png" alt="" class="chat-identity">
+                <input type="text" name="" id="" placeholder="Enviar un mensaje" class="chat-message">
+                <img id="bits-button" src="/img/bits.png" alt="" class="chat-bits">
+            </section>
+        </div>
+        
+        <a class="main-back" href="/temas/03-eventos/home.html">&#x21a9;</a>
+        <script src="/js/03-eventos/ejercicio2.js"></script>
+    </main>
+</body>
+</html>
